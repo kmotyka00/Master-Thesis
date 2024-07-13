@@ -1,0 +1,54 @@
+\chapter{Introduction}
+\label{cha:Introduction}
+
+%---------------------------------------------------------------------------
+
+\section{Background and Motivation}
+\label{sec:background}
+
+The field of deep learning, particularly in image classification tasks, has seen remarkable advancements in recent years. Neural networks have become the cornerstone of image recognition, enabling applications ranging from autonomous vehicles to medical diagnostics.
+
+Despite these advancements, the performance of neural networks, particularly in image classification tasks, significantly depends on the quality and volume of the training data. High-quality, diverse datasets are crucial for training robust models capable of understanding and categorizing images accurately. However, in many real-world scenarios, the acquisition of a large, well-labeled dataset is resource-intensive and sometimes, practically impossible. 
+
+This limitation underscores the critical importance of data augmentation, a method to artificially enhance the volume and diversity of training datasets, which has become a key technique for improving the performance of neural networks without the need for additional raw data. Data augmentation techniques can simulate a wider range of scenarios and conditions, thereby enriching the training set and improving the model's generalization capabilities.
+
+Traditional augmentation techniques, such as geometric transformations and color space adjustments, have provided foundational improvements in model training. With the arrival of more sophisticated methods, including CutMix, MixUp, and synthetic data generation through Generative Adversarial Networks (GANs), the potential for achieving even greater improvements in network performance has expanded. 
+
+This thesis conducts a comparative analysis of these augmentation techniques to identify their impact on image classification outcomes. The study seeks to highlight the effectiveness of various augmentation strategies, thereby providing insights that could optimize the training of neural networks.
+
+%---------------------------------------------------------------------------
+
+\section{Objectives of the Study}
+\label{sec:objectives}
+
+The main objective of the study is to compare classical and advanced image data augmentation techniques, including but not limited to CutMix, MixUp, and GAN-generated data, to evaluate their impact on neural network performance.
+
+Taking into account  that the effectiveness of data augmentation techniques may vary based on dataset characteristics, to obtain more general results, this study aims to compare a variety of datasets, including:
+\begin{enumerate}
+    \item A \textbf{standard}, well-balanced dataset.
+    \item A dataset with a \textbf{limited number of samples} per category, simulating a one-shot learning scenario to assess augmentation techniques in data-scarce situations.
+    \item A \textbf{domain-specific} dataset to explore the effectiveness of augmentation methods distinct to specialized fields' characteristic challenges and requirements.
+\end{enumerate}
+
+Based on the findings, the goal is to offer insights and recommendations on selecting and implementing data augmentation strategies tailored to the unique needs of different image classification tasks and dataset characteristics.
+
+%---------------------------------------------------------------------------
+
+\section{Limitations}
+\label{sec:scope}
+
+The study is limited to \textbf{selected datasets} and \textbf{neural network architectures}. While the research attempts to cover a broad range of augmentation methods, it acknowledges that the rapidly evolving landscape of deep learning might yield \textbf{new techniques} beyond the scope of this thesis. Additionally, the experimental design is tailored to assess augmentation impacts under specific conditions and configurations, which may not encapsulate \textbf{all potential application scenarios}. The findings are intended to provide valuable insights and recommendations, although with the understanding that results might vary with different datasets, neural network architectures, or task-specific requirements.
+
+\section{Thesis Structure}
+
+The thesis begins with an introduction, providing an overview of the motivation, objectives, and limitations of the study. This chapter sets the context for the entire research.
+
+Following the introduction, the second chapter presents the fundamental concepts underlying neural networks. It covers deep neural networks, convolutional neural networks, generative adversarial networks, and transfer learning, providing the necessary theoretical background for the following analysis.
+
+The third chapter focuses on data augmentation techniques, which are the main topic of the thesis. This chapter presents a justification for the use of data augmentation, explores both traditional and advanced methods, discusses the application of GANs in data augmentation, and considers domain-specific techniques.
+
+In the fourth chapter, the methodology is detailed. This includes descriptions of the datasets used, data preprocessing steps, convolutional neural network architectures employed, and the evaluation metrics selected for assessing the impact of data augmentation techniques on model performance.
+
+The fifth chapter describes the experiments and presents the results. It details the implementation specifics concerning GANs and CNNs training, and the outcomes of applying various data augmentation techniques to CNN performance. This chapter also interprets the results and discusses their broader implications.
+
+Finally, the sixth chapter concludes the thesis by summarizing the key insights and contributions of the study and suggesting directions for future research in the area.
